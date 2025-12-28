@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+  --color-valRed: #ff4655;
+  --color-valDark: #0f1923;
+  --color-valWhite: #ece8e1;
+  --color-valGray: #8b978f;
+  --color-valBlack: #111111;
+
+  --font-val-heading: 'Anton', sans-serif;
+  --font-val-text: 'Oswald', sans-serif;
+}
+
+:root {
+  font-family: 'Oswald', sans-serif;
+  background-color: #0f1923;
+  color: #ece8e1;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  cursor: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="2" fill="%23ff4655"/><path d="M16 4 V10 M16 22 V28 M4 16 H10 M22 16 H28" stroke="%23ff4655" stroke-width="2"/></svg>') 16 16, auto;
+}
+
+a,
+button,
+.cursor-pointer {
+  cursor: url('data:image/svg+xml;utf8,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="3" fill="%23ff4655"/><circle cx="16" cy="16" r="8" stroke="%23ff4655" stroke-width="1.5"/><path d="M16 4 V8 M16 24 V28 M4 16 H8 M24 16 H28" stroke="%23ff4655" stroke-width="1.5"/></svg>') 16 16, pointer;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4655;
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes pulse-red {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(255, 70, 85, 0));
+  }
+
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(255, 70, 85, 0.5));
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(255, 70, 85, 0));
+  }
+}
+
+@keyframes load-progress {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 70%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip-path: inset(10% 0 80% 0);
+  }
+
+  20% {
+    clip-path: inset(80% 0 10% 0);
+  }
+
+  40% {
+    clip-path: inset(40% 0 50% 0);
+  }
+
+  60% {
+    clip-path: inset(10% 0 60% 0);
+  }
+
+  80% {
+    clip-path: inset(70% 0 20% 0);
+  }
+
+  100% {
+    clip-path: inset(10% 0 80% 0);
+  }
+}
+
+.animate-pulse-red {
+  animation: pulse-red 2s infinite;
+}
+
+.animate-load-progress {
+  animation: load-progress 2.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Glitch Effect Utilities */
+.glitch-text {
+  position: relative;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f1923;
+}
+
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -1px 0 #ff4655;
+  animation: glitch-anim 3s infinite linear alternate-reverse;
+  clip-path: inset(0 0 0 0);
+}
+
+.glitch-text::after {
+  left: -2px;
+  text-shadow: -1px 0 #00ffff;
+  animation: glitch-anim 2.5s infinite linear alternate-reverse;
+  clip-path: inset(0 0 0 0);
+}
+
+/* Clip Path Utilities */
+.clip-slant-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.clip-slant-top {
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-button {
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.clip-card {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}

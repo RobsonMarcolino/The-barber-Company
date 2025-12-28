@@ -3,8 +3,7 @@ RADIANT BARBER - Estilo Tático
 "Missão: Estilo Impecável. Cortes de precisão, ambiente tático e profissionais de elite."
 
 <p align="center">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/STATUS-COMPLETED-success%3Fstyle%3Dfor-the-badge%26logo%3Dvalorant%26logoColor%3Dwhite%26color%3Dff4655" alt="Status Completed">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/STYLE-VALORANT-0f1923%3Fstyle%3Dfor-the-badge%26logo%3Driotgames%26logoColor%3Dwhite" alt="Valorant Style">
+<img width="1830" height="905" alt="image" src="https://github.com/user-attachments/assets/06f70b43-55a4-43ac-a3ca-f55433c6bf1f" />
 </p>
 
 📋 Sobre o Projeto

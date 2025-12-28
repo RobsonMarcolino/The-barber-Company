@@ -25,64 +25,7 @@
 *   **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca para animações complexas.
 *   **[React Icons](https://react-icons.github.io/react-icons/)**: Ícones vetoriais leves.
 *   **TypeScript**: Tipagem estática para código mais seguro.
-
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-
-*   Node.js instalado (versão 18+ recomendada).
-
-### Instalação
-
-1.  Clone o repositório:
-    ```bash
-    git clone https://github.com/RobsonMarcolino/The-barber-Company.git
-    ```
-2.  Entre na pasta do projeto:
-    ```bash
-    cd BarbeariaVL
-    ```
-3.  Instale as dependências:
-    ```bash
-    npm install
-    ```
-
-### Rodando Localmente
-
-Para iniciar o servidor de desenvolvimento:
-
-```bash
-npm run dev
-```
-
-O projeto estará acessível em `http://localhost:5173`.
-
-### Build para Produção
-
-Para gerar a versão otimizada para produção:
-
-```bash
-npm run build
-```
-
-## 🌐 Deploy (GitHub Pages)
-
-Este projeto já está configurado para deploy automático no GitHub Pages.
-
-Para publicar uma nova versão:
-
-1.  Certifique-se de que suas alterações estão commitadas.
-2.  Execute o comando:
-    ```bash
-    npm run deploy
-    ```
-3.  Acesse em: `https://RobsonMarcolino.github.io/The-barber-Company/`
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Se você tiver sugestões para melhorar este projeto tático, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
----
+*   
 
 <p align="center">
   Desenvolvido com 🎯 Precisão e Estilo.

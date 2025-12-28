@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# THE BARBER COMPANY - Estilo Tático
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![The Barber Company Banner](public/og-image.png)
 
-Currently, two official plugins are available:
+> "Missão: Estilo Impecável. Cortes de precisão, ambiente tático e profissionais de elite."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Sobre o Projeto
 
-## React Compiler
+**The Barber Company** é uma landing page moderna e responsiva desenvolvida para uma barbearia com temática tática inspirada no universo gamer (Valorant) e black-ops. O projeto foca em uma experiência visual imersiva, alta performance e conversão de agendamentos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### ✨ Funcionalidades Principais
 
-## Expanding the ESLint configuration
+*   **Design Tático & Responsivo**: Layout agressivo e elegante (`#0f1923`), 100% adaptado para Mobile, Tablet e Desktop.
+*   **Menu Mobile Interativo**: Navegação estilo "Overlay" com animações fluidas.
+*   **Sistema de Agendamento (Modal)**: Fluxo intuitivo de 3 passos (Serviço -> Agente -> Confirmação) sem recarregar a página.
+*   **Galeria Dinâmica**: Exibição de cortes e estilo do ambiente.
+*   **Animações FX**: Uso de `Framer Motion` e CSS puro para efeitos de "Glitch", "Slide-in" e transições suaves.
+*   **SEO & Social**: Otimizado com meta tags Open Graph para compartilhamento rico no WhatsApp e Redes Sociais.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **[React](https://reactjs.org/)**: Biblioteca principal para construção da interface.
+*   **[Vite](https://vitejs.dev/)**: Build tool ultrarrápida.
+*   **[Tailwind CSS](https://tailwindcss.com/)**: Framework de estilização utility-first.
+*   **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca para animações complexas.
+*   **[React Icons](https://react-icons.github.io/react-icons/)**: Ícones vetoriais leves.
+*   **TypeScript**: Tipagem estática para código mais seguro.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Como Executar o Projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Pré-requisitos
+
+*   Node.js instalado (versão 18+ recomendada).
+
+### Instalação
+
+1.  Clone o repositório:
+    ```bash
+    git clone https://github.com/RobsonMarcolino/The-barber-Company.git
+    ```
+2.  Entre na pasta do projeto:
+    ```bash
+    cd BarbeariaVL
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+
+### Rodando Localmente
+
+Para iniciar o servidor de desenvolvimento:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto estará acessível em `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build para Produção
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Para gerar a versão otimizada para produção:
+
+```bash
+npm run build
 ```
+
+## 🌐 Deploy (GitHub Pages)
+
+Este projeto já está configurado para deploy automático no GitHub Pages.
+
+Para publicar uma nova versão:
+
+1.  Certifique-se de que suas alterações estão commitadas.
+2.  Execute o comando:
+    ```bash
+    npm run deploy
+    ```
+3.  Acesse em: `https://RobsonMarcolino.github.io/The-barber-Company/`
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Se você tiver sugestões para melhorar este projeto tático, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+---
+
+<p align="center">
+  Desenvolvido com 🎯 Precisão e Estilo.
+</p>

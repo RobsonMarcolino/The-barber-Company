@@ -10,7 +10,6 @@ RADIANT BARBER - Estilo Tático
 
 Radiant Barber é uma landing page imersiva desenvolvida para uma barbearia com temática tática inspirada na identidade visual do jogo Valorant. O projeto foca em uma experiência visual de alto impacto ("Glitch aesthetic"), performance e conversão de agendamentos, transportando o cliente para uma atmosfera de "agente de elite".
 
-📸 Preview
 
 <div align="center">
 <img width="100%" alt="Radiant Barber Interface" src="https://github.com/user-attachments/assets/f82e9d39-5416-4c1a-b243-7908fb7b991d" />

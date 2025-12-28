@@ -49,27 +49,3 @@ FontAwesome: Ícones vetoriais.
 
 Google Fonts: Fontes Anton e Oswald para identidade visual.
 
-🚀 Como Executar
-
-Como este projeto é estático (não requer build complexo com Node.js), você pode rodá-lo facilmente:
-
-Clone o repositório:
-
-git clone [https://github.com/seu-usuario/radiant-barber.git](https://github.com/seu-usuario/radiant-barber.git)
-
-
-Abra o arquivo:
-
-Basta abrir o arquivo index.html diretamente no seu navegador.
-
-Ou use uma extensão como Live Server no VS Code.
-
-🎨 Créditos de Assets
-
-Imagens: Unsplash & Riot Games Media Kit (Uso para fins de estudo/fan project).
-
-Ícones: FontAwesome.
-
-<p align="center">
-Desenvolvido com 🎯 <strong>Precisão e Estilo</strong> por <a href="https://www.google.com/search?q=https://github.com/seu-usuario">Seu Nome</a>
-</p>
